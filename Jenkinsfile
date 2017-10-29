@@ -1,7 +1,7 @@
 
 
 node {
-    def scr = libraryResource 'jenkins.py'
+    def scr = readFile 'resources/jenkins.py'
     println scr
     scr = scr.replaceAll('sys.argv[1]', 3)
 
