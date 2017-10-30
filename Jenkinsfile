@@ -3,7 +3,8 @@
 node {
     checkout scm
     def scr = readFile 'resources/jenkins.py'
-    scr = scr.replaceAll('sys.argv[1]', '3')
+    println scr.class
+    scr = scr.toString().replaceAll('sys.argv[1]', '3')
     println scr
 
 /*    def script = '''#!/bin/bash
