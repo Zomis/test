@@ -5,7 +5,7 @@ node {
     def scr = readFile 'resources/jenkins.py'
     println scr.class
     println scr.toString().contains('sys.argv[1]')
-    def scr2 = scr.toString().replaceAll('sys.argv[1]', '3')
+    def scr2 = scr.toString().replaceAll('sys\.argv\[1\]', '3')
     println scr.equals(scr2)
     println scr2
 
