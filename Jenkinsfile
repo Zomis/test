@@ -1,6 +1,12 @@
+import groovy.json.JsonSlurper
 
-
+@Library('ZomisJenkins')
+import net.zomis.jenkins.Duga
 node {
+    def duga = new Duga()
+    duga.dugaTweet("Jenkins was here")
+
+
     checkout scm
     def scr = readFile 'resources/jenkins.py'
     println scr.class
