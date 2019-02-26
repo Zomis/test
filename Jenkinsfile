@@ -5,7 +5,7 @@ import net.zomis.jenkins.Duga
 node {
     //def duga = new Duga()
     //duga.dugaTweet("Jenkins was here")
-    println "Test 123";
+    println "Test 1234567";
 
 
     checkout scm
@@ -22,6 +22,6 @@ echo $1
 '''.trim()*/
 
 //    sh(script: script + "\n423")
-    def status = sh(script: scr2, returnStatus: true)
-    println "Status result: $status"
+    //def status = sh(script: scr2, returnStatus: true)
+    //println "Status result: $status"
 }
