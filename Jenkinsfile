@@ -5,7 +5,7 @@ import net.zomis.jenkins.Duga
 node {
     //def duga = new Duga()
     //duga.dugaTweet("Jenkins was here")
-    println "Test 123";
+    println "Test 12345";
 
 
     checkout scm
